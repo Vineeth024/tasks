@@ -1,0 +1,57 @@
+<!doctype HTML>
+<html lang='en'>
+    <head>
+        <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .nav ul {
+            list-style-type:none;
+           width:1535px;
+           height:42.5px;
+           background-color:#484848;
+        }
+        .nav li {
+            display:inline;
+         }
+
+        .nav li a {
+            padding:14px 22px;
+            margin-left:8px;
+            line-height:42.5px;
+            margin-top:7px;
+            text-align:center;
+            text-decoration:none;
+            color:white;
+        }
+        .active{
+            background-color:#87ceeb;
+        }
+        .nav li a:hover{
+            background-color:black;   
+        }
+        </style>
+    </head>
+    <body onload="popup()">
+        <div class="nav" >
+            <ul >
+            <li><a class="active" onclick="home()" href="#">Home</a></li>
+            <li><a href="fibonacci.html" onload="FibonacciPopup()">Fibonacci Series</a></li>
+            </ul>
+        </div>
+        <br><br>
+
+        <h2>About JavaScript</h2>
+        <p id="js"></p>
+        <br>
+        <p>To get 5<sup>th</sup>,7<sup>th</sup> and 10<sup>th</sup> words press the button</p>
+        <button onclick="words()">Click Here!</button><br>
+        <h3 id="word5"></h3>
+        <h3 id="word7"></h3>
+        <h3 id="word10"></h3>
+        
+    </body>
+    <script src="javascipt.js">
+    </script>
+</html>

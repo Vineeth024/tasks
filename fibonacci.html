@@ -1,0 +1,65 @@
+<!doctype HTML>
+<html lang='en'>
+    <head>
+        <style>
+            *{
+                    margin:0px;
+                    padding:0px;
+                }
+            .nav ul {
+                list-style-type:none;
+                   width:1535px;
+                   height:42.5px;
+                   background-color:#484848;
+            }
+            .nav li {
+                display:inline;
+            }
+
+            .nav li a {
+                    padding:14px 22px;
+                    margin-left:8px;
+                    line-height:42.5px;
+                    margin-top:7px;
+                    text-align:center;
+                    text-decoration:none;
+                    color:white;
+            }
+            .active{
+                    background-color:#87ceeb;
+                }
+            .nav li a:hover{
+                    background-color:black;
+                   
+                }
+            button{
+                background-color: #555555;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav" >
+            <ul >
+            <li><a href="JavaScript.html">Home</a></li>
+            <li><a  class="active" href="fibonacci.html" >Fibonacci Series</a></li>
+            </ul>
+        </div>
+        <h3>Enter any number between 10 and 100 and get Fibonacci Series in console log</h3>
+        <br>
+        <label>
+            <input type="number" id ="fibvalue">
+        </label>
+        <button   onclick="FibonacciSeries()">Click here</button>
+    </body>
+    <script src="javascipt.js">
+    </script>
+</html>
